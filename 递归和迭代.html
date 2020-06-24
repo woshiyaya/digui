@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 迭代方法
+    function pow(x,n){
+      let result = 1;
+      for(i=0;i<n;i++){
+        result *=x
+      }
+      return result
+    }
+    // 表示2的3次方
+   console.log(pow(2,3))
+
+
+  // 递归
+  function pow(x,n){
+    if(n==1){
+      return x
+    }else{
+      return x*pow(x,n-1)
+    }
+  }
+  console.log(pow(2,3))
+  </script>
+</body>
+</html>
